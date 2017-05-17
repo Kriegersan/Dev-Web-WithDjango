@@ -1,10 +1,49 @@
-<!---HelloWorld/Templates/index.html-->
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load staticfiles %}
 <head>
-	<title>Hello WOrld!</title>
+	<meta name="author" content="Keith Nelson" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="{% static  'css/style.css' %}" type="text/css" />
+	<title>KRBN Security</title>
 </head>
 <body>
-<h2>This is just a test to see if I can make a Website with Python!</h2>
+	<div id="page" align="center">
+		<div id="content" style="width:800px">
+			<div id="logo">
+				<div style="margin-top:70px" class="whitetitle">KRBN Security</div>
+			</div>
+			<div id="topheader">
+				<div align="left" class="bodytext">
+					<br />
+					<strong>KRBN Security</strong><br />
+					138 Middle Street<br />
+					Old Town Maine <br />
+					Phone: 207-217-5973<br />
+					Keith@krbnsecurity.com
+				</div>
+				<div id="toplinks" class="smallgraytext">
+					<a href="{% url 'HomePage' %}">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+			<div id="menu">
+				<div align="right" class="smallwhitetext" style="padding:9px;">
+					<a href="{% url 'HomePage' %}">Home</a> | <a href="#">About Us</a> | <a href="{% url 'Support'%}">Support</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+			<div id="contenttext">
+				<div style="padding:10px">
+					<span class="titletext">Welcome to KRBN Security!</span>
+					</div>
+					<div class="bodytext" style="padding:12px;" align="justify">
+				</div>
+			</div>
+			</div>
+			<div id="footer" class="smallgraytext">
+				<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Support</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				| KRBN Security
+				&copy; 2017
+			</div>
+		</div>
+	</div>
 </body>
 </html>
